@@ -8,13 +8,13 @@
         <a routerLink="about">About</a>
       </li>
       <li>
-        <a routerLink="iniciar-sesion">Iniciar sesión</a>
+        <a routerLink="iniciar-sesion" *ngIf="!isLogged">Iniciar sesión</a>
       </li>
       <li>
-        <a routerLink="registro">Registro</a>
+        <a routerLink="registro" *ngIf="!isLogged">Registro</a>
       </li>
       <li>
-        <a routerLink="salir">Salir</a>
+        <a (click)="logout()" *ngIf="isLogged" >Salir</a>
       </li>
     </ul>
   </nav>
