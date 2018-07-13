@@ -1,0 +1,17 @@
+header{
+    padding: 10px 0;
+    background: #000;
+    li{
+        display: inline-block;
+        a{
+            padding: 6px 20px;
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            &:hover{
+                color: #000;
+                background: red;
+            }
+        }
+    }
+}
