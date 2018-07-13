@@ -1,11 +1,11 @@
 
 <div class="centrar">
-  <form>
+  <form (submit)="onSubmitLogin()" >
     <label for="email">Email</label>
-    <input type="email" name="email" id="email">
+    <input type="email" [(ngModel)]="email" name="email" id="email">
     <label for="password">Contraseña</label>
-    <input type="password" name="password" id="password">
-    <input type="button" value="Entrar">
+    <input type="password" [(ngModel)]="password" name="password" id="password">
+    <input type="submit" value="Entrar">
   </form>
   <div class="botonesredes">
       <input type="button" value="Facebook">
